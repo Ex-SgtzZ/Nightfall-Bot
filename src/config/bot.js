@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "Idle",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Over Nightfall RP",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 3, 
       },
     ],
   },
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Nightfall Bot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -144,7 +144,7 @@ export const botConfig = {
     thumbnail: null,
     author: {
       // Optional default embed author block.
-      name: null,
+      name: "Nightfall RP Bot",
       icon: null,
       url: null,
     },
@@ -156,7 +156,7 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "coin",
       // Plural display name.
       namePlural: "coins",
       // Currency symbol shown in balances.
@@ -164,7 +164,7 @@ export const botConfig = {
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 500,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 100000,
@@ -201,10 +201,10 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: "1498375105909362929",
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: ["1498198816938000414"],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -239,10 +239,10 @@ export const botConfig = {
     defaultPriority: "none",
 
     // Category ID where closed tickets are archived.
-    archiveCategory: null,
+    archiveCategory: "1498375694290522334",
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: "1498375498403676260",
   },
 
   // =========================
