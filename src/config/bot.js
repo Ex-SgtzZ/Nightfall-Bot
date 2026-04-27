@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "Idle",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Over Nightfall RP",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 3, 
       },
     ],
   },
@@ -88,14 +88,14 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699", 
-      secondary: "#2F3136", 
+      primary: "#2a7cce", 
+      secondary: "#2d3549", 
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287", 
       error: "#ED4245", 
       warning: "#FEE75C", 
-      info: "#3498DB", 
+      info: "#4fb9ff", 
 
       // Neutral utility colors.
       light: "#FFFFFF",
@@ -119,11 +119,11 @@ export const botConfig = {
         open: "#57F287",
         claimed: "#FAA61A",
         closed: "#ED4245",
-        pending: "#99AAB5",
+        pending: "#a4c805",
       },
       economy: "#F1C40F",
       birthday: "#E91E63",
-      moderation: "#9B59B6",
+      moderation: "#b00b0b",
 
       // Ticket priority color mapping.
       priority: {
@@ -136,16 +136,16 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Nightfall Bot",
       // Footer icon URL (null = no icon).
-      icon: null,
+      icon: "https://i.ibb.co/kT5Cx5c/Chat-GPT-Image-Apr-27-2026-09-23-20-AM.png",
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
     thumbnail: null,
     author: {
       // Optional default embed author block.
-      name: null,
-      icon: null,
+      name: "Nightfall RP Bot",
+      icon: "https://i.ibb.co/kT5Cx5c/Chat-GPT-Image-Apr-27-2026-09-23-20-AM.png",
       url: null,
     },
   },
@@ -156,7 +156,7 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "coin",
       // Plural display name.
       namePlural: "coins",
       // Currency symbol shown in balances.
@@ -164,7 +164,7 @@ export const botConfig = {
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 500,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 100000,
@@ -201,10 +201,10 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: "1498375105909362929",
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: ["1498198816938000414"],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -239,10 +239,10 @@ export const botConfig = {
     defaultPriority: "none",
 
     // Category ID where closed tickets are archived.
-    archiveCategory: null,
+    archiveCategory: "1498375694290522334",
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: "1498375498403676260",
   },
 
   // =========================
@@ -436,7 +436,7 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
+    economy: false,
     leveling: true,
     moderation: true,
     logging: true,
@@ -445,21 +445,21 @@ export const botConfig = {
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
     verification: true,
     reactionRoles: true,
-    joinToCreate: true,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
+    voice: false,
+    search: false,
     tools: true,
     utility: true,
-    community: true,
-    fun: true,
+    community: false,
+    fun: false,
   },
 };
 
