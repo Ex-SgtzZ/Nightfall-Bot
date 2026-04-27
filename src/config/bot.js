@@ -88,14 +88,14 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699", 
-      secondary: "#2F3136", 
+      primary: "#2a7cce", 
+      secondary: "#2d3549", 
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287", 
       error: "#ED4245", 
       warning: "#FEE75C", 
-      info: "#3498DB", 
+      info: "#4fb9ff", 
 
       // Neutral utility colors.
       light: "#FFFFFF",
@@ -119,11 +119,11 @@ export const botConfig = {
         open: "#57F287",
         claimed: "#FAA61A",
         closed: "#ED4245",
-        pending: "#99AAB5",
+        pending: "#a4c805",
       },
       economy: "#F1C40F",
       birthday: "#E91E63",
-      moderation: "#9B59B6",
+      moderation: "#b00b0b",
 
       // Ticket priority color mapping.
       priority: {
@@ -138,14 +138,14 @@ export const botConfig = {
       // Default footer text used in bot embeds.
       text: "Nightfall Bot",
       // Footer icon URL (null = no icon).
-      icon: null,
+      icon: "https://i.ibb.co/kT5Cx5c/Chat-GPT-Image-Apr-27-2026-09-23-20-AM.png",
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
     thumbnail: null,
     author: {
       // Optional default embed author block.
       name: "Nightfall RP Bot",
-      icon: null,
+      icon: "https://i.ibb.co/kT5Cx5c/Chat-GPT-Image-Apr-27-2026-09-23-20-AM.png",
       url: null,
     },
   },
@@ -436,7 +436,7 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
+    economy: false,
     leveling: true,
     moderation: true,
     logging: true,
@@ -445,21 +445,21 @@ export const botConfig = {
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
     verification: true,
     reactionRoles: true,
-    joinToCreate: true,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
+    voice: false,
+    search: false,
     tools: true,
     utility: true,
-    community: true,
-    fun: true,
+    community: false,
+    fun: false,
   },
 };
 
