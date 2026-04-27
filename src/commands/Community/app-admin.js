@@ -208,6 +208,66 @@ async function handleSetup(interaction) {
         .setLabel('Question 3 (optional)')
         .setTextInputComponent(q3Input);
 
+    const q4Input = new TextInputBuilder()
+        .setCustomId('app_question_4')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q4Label = new LabelBuilder()
+        .setLabel('Question 4 (optional)')
+        .setTextInputComponent(q4Input);
+
+    const q5Input = new TextInputBuilder()
+        .setCustomId('app_question_5')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q5Label = new LabelBuilder()
+        .setLabel('Question 5 (optional)')
+        .setTextInputComponent(q5Input);
+
+    const q6Input = new TextInputBuilder()
+        .setCustomId('app_question_6')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q6Label = new LabelBuilder()
+        .setLabel('Question 6 (optional)')
+        .setTextInputComponent(q6Input);
+
+    const q7Input = new TextInputBuilder()
+        .setCustomId('app_question_7')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q7Label = new LabelBuilder()
+        .setLabel('Question 7 (optional)')
+        .setTextInputComponent(q7Input);
+   
+    const q8Input = new TextInputBuilder()
+        .setCustomId('app_question_8')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q8Label = new LabelBuilder()
+        .setLabel('Question 8 (optional)')
+        .setTextInputComponent(q8Input);
+    
+    const q9Input = new TextInputBuilder()
+        .setCustomId('app_question_9')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+
+    const q9Label = new LabelBuilder()
+        .setLabel('Question 9 (optional)')
+        .setTextInputComponent(q9Input);
+
     modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label);
 
     await interaction.showModal(modal);
@@ -240,6 +300,12 @@ async function handleSetup(interaction) {
         submitted.fields.getTextInputValue('app_question_1').trim(),
         submitted.fields.getTextInputValue('app_question_2').trim(),
         submitted.fields.getTextInputValue('app_question_3').trim(),
+        submitted.fields.getTextInputValue('app_question_4').trim(),
+        submitted.fields.getTextInputValue('app_question_5').trim(),
+        submitted.fields.getTextInputValue('app_question_6').trim(),
+        submitted.fields.getTextInputValue('app_question_7').trim(),
+        submitted.fields.getTextInputValue('app_question_8').trim(),
+        submitted.fields.getTextInputValue('app_question_9').trim(),
     ].filter(q => q.length > 0);
 
     // Get the role to verify it exists
